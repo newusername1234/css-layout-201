@@ -1,0 +1,26 @@
+/* make board full window size */
+.board {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* make rows full window width, 1/8th window height */
+/* make rows display squares next to each other */
+.row {
+    display: flex;
+    width: 100%;
+    height: 12.5%;
+}
+
+/* make square full row height, 1/8th row width */
+.white {
+    background-color: lightgrey;
+    height: 100%;
+    width: 12.5%;
+}
+
+.black {
+    background-color: darkgrey;
+    height: 100%;
+    width: 12.5%;
+}
