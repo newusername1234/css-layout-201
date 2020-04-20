@@ -1,26 +1,36 @@
+* {
+    box-sizing: border-box;
+}
 /* make board full window size */
 .board {
     height: 100vh;
     width: 100vw;
 }
 
-/* make rows full window width, 1/8th window height */
+/* make rows full window width, 1/10th window height */
 /* make rows display squares next to each other */
 .row {
     display: flex;
     width: 100%;
-    height: 12.5%;
+    height: 10%;
 }
 
-/* make square full row height, 1/8th row width */
+/* make square full row height, 1/8th(change to 1/10th after adding numbers) 
+row width, center letters/numbers */
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
 .white {
     background-color: lightgrey;
-    height: 100%;
-    width: 12.5%;
 }
 
 .black {
     background-color: darkgrey;
-    height: 100%;
-    width: 12.5%;
 }
